@@ -1,101 +1,131 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div className="bg-[url('/home-hero.jpg')] bg-cover bg-center w-full h-[1007px] object-contain relative">
+        {/* Background image */}
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="bg-[#FFF3E3] w-full sm:w-[643px] h-auto sm:h-[443px] absolute top-[253px] left-[50%] transform -translate-x-1/2 sm:left-[50%] lg:left-[60%] lg:translate-x-[20px] p-6 sm:p-9 xl:left-[50%]">
+        <div>
+          <div className="text-center sm:text-left">New Arrival</div>
+          <div>
+            <h1 className="font-bold text-3xl sm:text-[52px] leading-[40px] sm:leading-[65px] text-[#B88E2F]">
+              Discover Our New Collection
+            </h1>
+          </div>
+          <div className="font-medium text-base sm:text-[18px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+          </div>
+          <button className="bg-[#B88E2F] py-4 sm:py-[25px] px-8 sm:px-[72px] font-bold text-sm sm:text-[16px] leading-[24px] text-white mt-6 sm:mt-10 w-full sm:w-auto">
+            BUY NOW
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+      {/* Hero Section End */}
+
+      <div className="py-4">
+        <div className="font-bold text-[32px] leading-[48px] text-center ">Browse The Range</div>
+        <div className="font-normal text-[20px] leading-[30px] text-[#666666]  text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      </div>
+
+      {/* Section-2 */}
+
+    <div className="flex py-4 px-8 mx-auto">
+      <div className="mx-3 ">
+        <img src="/image1-sec-2.png" alt="furniture"  className="rounded-lg" width={782} height={521}/>
+        <h2 className="text-center font-semibold text-[24px] leading-9 py-9">Dining</h2>
+        </div>
+      <div className="">
+        <img src="/image2-sec2.png" alt="furniture" className="rounded-lg" width={762} height={508} />
+        <h2 className="text-center font-semibold text-[24px] leading-9 py-9">Living</h2>
+        </div>
+      <div className="mx-3">
+        <img src="/image3-sec2.png" alt="furniture" className="rounded-lg" width={720} height={480} />
+        <h2 className="text-center font-semibold text-[24px] leading-9 py-9">Bedroom</h2>
+        </div>
+       </div>
+       {/* section-2 end */}
+        <div className="font-bold text-[40px] leading-[48px] text-center pb-4">Our Products</div>
+       
+       {/* Section 3 */}
+
+       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4 px-8 mx-auto">
+        <div className="mx-3 my-4" >
+          <img src="/im1-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50 " />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+        
+
+        <div className="mx-3 my-4" >
+          <img src="/im1-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50" />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+        <div className="mx-3 my-4" >
+          <img src="/im3-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50" />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+        <div className="mx-3 my-4" >
+          <img src="/im1-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50" />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+        <div className="mx-3 my-4" >
+          <img src="/im5-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50" />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+        <div className="mx-3 my-4" >
+          <img src="/im6-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50" />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+        <div className="mx-3 my-4" >
+          <img src="/im3-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50" />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+        <div className="mx-3 my-4" >
+          <img src="/im6-sec3.png" alt="furniture" className="w-full h-[400px] object-cover rounded-lg hover:opacity-50" />
+          <div className="py-3 bg-[#F4F5F7] px-3">
+          <h2 className="font-semibold text-2xl">Lolito</h2>
+          <p className="font-medium text-base text-[#898989]">Luxury Big Sofa</p>
+          <p className="font-semibold text-xl text-[#3A3A3A]">Rp 2,500.000</p>
+          </div>
+        </div>
+       </div>
+      {/* Section3 End */}
+      
+      <div><button>Show More</button></div>
+     </div>
+    
+     
+    
+
+  
   );
 }
